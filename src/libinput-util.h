@@ -25,11 +25,11 @@
 #ifndef LIBINPUT_UTIL_H
 #define LIBINPUT_UTIL_H
 
-#include "config.h"
+//#include "config.h"
 
-#ifdef NDEBUG
-#warning "libinput relies on assert(). #defining NDEBUG is not recommended"
-#endif
+//#ifdef NDEBUG
+//#warning "libinput relies on assert(). #defining NDEBUG is not recommended"
+//#endif
 
 
 #include "libinput.h"

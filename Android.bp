@@ -1,0 +1,42 @@
+cc_defaults {
+	name: "libinput_defaults",
+	cflags: [
+		"-Wno-unused-parameter", 
+		"-fvisibility=hidden",
+		"-Wmissing-prototypes", 
+		"-Wstrict-prototypes",
+	],
+}
+
+cc_library_static {
+	name: "libinput-master",
+	defaults: ["libinput_defaults"],
+	local_include_dirs: ["src", "include"],
+	srcs: [
+//		"src/libinput.c",
+//		"src/evdev.c",
+//		"src/evdev-debounce.c",
+//		"src/evdev-fallback.c",
+//		"src/evdev-totem.c",
+//		"src/evdev-middle-button.c",
+//		"src/evdev-mt-touchpad.c",
+//		"src/evdev-mt-touchpad-tap.c",
+//		"src/evdev-mt-touchpad-thumb.c",
+//		"src/evdev-mt-touchpad-buttons.c",
+//		"src/evdev-mt-touchpad-edge-scroll.c",
+//		"src/evdev-mt-touchpad-gestures.c",
+//		"src/evdev-tablet.c",
+//		"src/evdev-tablet-pad.c",
+//		"src/evdev-tablet-pad-leds.c",
+//		"src/path-seat.c",
+//		"src/udev-seat.c",
+		"src/timer.c",
+	],
+	export_include_dirs: [ "src" ]
+}
+
+cc_library_headers {
+    name: "libinput_inc",
+    export_include_dirs: [ "src" ]
+}
+

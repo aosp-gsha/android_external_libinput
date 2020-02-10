@@ -25,7 +25,7 @@
 #ifndef LIBINPUT_PRIVATE_H
 #define LIBINPUT_PRIVATE_H
 
-#include "config.h"
+//#include "config.h"
 
 #include <errno.h>
 #include <math.h>
@@ -39,7 +39,7 @@
 
 #include "libinput.h"
 #include "libinput-util.h"
-#include "libinput-version.h"
+//#include "libinput-version.h"
 
 struct libinput_source;
 
